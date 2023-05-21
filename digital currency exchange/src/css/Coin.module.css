@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 17px 0px;
+  transition: all 0.3s;
+}
+
+.container:hover {
+  background-color: #fff;
+}
+
+.container img {
+  object-fit: contain;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.container p {
+  font-size: 16px;
+  color: #818181;
+  cursor: default;
+}
+
+@media (max-width: 500px) {
+  .container p {
+    font-size: 14px;
+  }
+
+  .container img {
+    width: 80px;
+    height: 80px;
+  }
+}
